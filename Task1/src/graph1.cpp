@@ -100,9 +100,7 @@ size_t graph2::the_best_path(char start, char end)
         vis_ver_print();
         std::cout << "After firts print\n"; 
         #endif
-
-        char neighbour_path = 0; 
-        size_t min_narrow_place = curr_ver->second->longest_edge;
+        
         for (it2 neighbour = curr_ver->second->links.begin(); neighbour != curr_ver->second->links.end(); neighbour++)
         {
             Node* curr_neig_node = nodes_map.find(neighbour->first)->second; 
